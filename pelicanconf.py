@@ -19,6 +19,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+AUTHORS_SAVE_AS = None
+CATEGORIES_SAVE_AS = None
+TAGS_SAVE_AS = None
+ARCHIVES_SAVE_AS = None
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
