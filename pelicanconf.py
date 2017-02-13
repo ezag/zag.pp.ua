@@ -11,6 +11,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Kiev'
 
 DEFAULT_LANG = 'ru'
+DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -98,3 +99,17 @@ EXTRA_PATH_METADATA = {
         'path': 'CNAME',
     },
 }
+
+WITH_FUTURE_DATES = False
+SUMMARY_MAX_LENGTH = 200
+USE_FOLDER_AS_CATEGORY = False
+
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{page_order}/{slug}/'
+ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
+PAGE_URL = ARTICLE_URL
+PAGE_SAVE_AS = ARTICLE_SAVE_AS
+PATH_METADATA = (
+    '(?P<date>\d{4}[-/]\d{2}[-/]\d{2})[\./]'
+    '(?P<page_order>\d{1})\.'
+    '(?P<slug>.*)\.rst'
+)
