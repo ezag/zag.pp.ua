@@ -1,0 +1,29 @@
+html,body,h1 {
+  margin: 0;
+  padding: 0;
+}
+html {
+  color: #657b83;
+  background: #eee8d5;
+}
+body {
+  width: 978px;
+  background: #fdf6e3;
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid #93a1a1;
+  border-top: none;
+}
+a {
+  color: #b58900;
+}
+a:visited {
+  color: #d33682;
+}
+a:hover {
+  color: #d33682;
+}
+h1 {
+  color: #b58900;
+  color: #d33682;
+}
